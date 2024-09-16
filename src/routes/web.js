@@ -16,6 +16,7 @@ const initWebRoutes = (app) => {
     // method get tượng trưng cho việc lấy data từ phía server
     router.post("/users/create-user", homeController.handleCreateNewUser);
     // method post tượng trưng cho việc đẩy data lên phía server (create)
+    router.post("/delete-user/:id", homeController.handleDeleteUser)
     return app.use("/", router);
 
 }
