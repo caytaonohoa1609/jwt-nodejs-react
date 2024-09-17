@@ -43,7 +43,7 @@ const handleUpdateUser = async (req, res) => {
     let email = req.body.email;
     let username = req.body.username;
     let id = req.body.id;
-
+    await userService.updateUserInfor(email, username, id);
     return res.redirect("/user");
 }
 
