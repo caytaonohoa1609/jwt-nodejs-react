@@ -4,7 +4,10 @@
     "password": null,
     "database": "jwt(json web token)",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "difine": {
+      "freezeTableName": true
+    }
   },
   "test": {
     "username": "root",
